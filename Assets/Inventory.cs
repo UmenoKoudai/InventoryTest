@@ -39,8 +39,13 @@ public class Inventory : MonoBehaviour
 
     }
 
-    void ToIndex()
+    public int ToIndex(ItemIndex item)
     {
+        return item.horizontal + GetWidth * item.vertical;
+    }
 
+    public ItemIndex ToCell(int index)
+    {
+        return new ItemIndex(index % GetWidth, index / GetWidth);
     }
 }
