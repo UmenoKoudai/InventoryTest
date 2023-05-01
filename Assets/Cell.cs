@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Cell : MonoBehaviour
 {
+    //アイテムボックスの縦配列と横配列のインデックスを格納するクラス
     public int vertical;
     public int horizontal;
     public Cell(int vertical, int horizontal)

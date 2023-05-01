@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.IO;
-using System.Linq;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] GameObject _inventoryPanel;
-    [SerializeField, Tooltip("�C���x���g���̎��[��"), Range(0, 10)]int _storage;
+    [SerializeField, Tooltip("インベントリオブジェクト")] GameObject _inventoryPanel;
+    [SerializeField, Tooltip("インベントリの収納数"), Range(0, 10)]int _storage;
+    [Tooltip("縦配列と横配列を収納数の数だけ保管できる配列")]
     Cell[,] _itemData;
+    [Tooltip("どの収納場所にが何のアイテムが格納されているか")]
     int[] _itemArray;
     
+    //_itemDataの要素数を取得(縦列)
     private int GetWidth
     {
         get
@@ -20,6 +19,7 @@ public class Inventory : MonoBehaviour
             return _itemData.GetLength(0);
         }
     }
+    //_itemDataの要素数を取得(横列)
     private int GetHight
     {
         get
@@ -34,6 +34,7 @@ public class Inventory : MonoBehaviour
         _itemArray = Enumerable.Repeat(-1, GetWidth * GetHight).ToArray();
     }
 
+    //今の格納されているアイテムデータを反映させる
     public void SetItem()
     {
         for(int i = 0; i < GetWidth; i++)
@@ -59,12 +60,13 @@ public class Inventory : MonoBehaviour
                             itemImage.sprite = (Sprite)Resources.Load("RecoveryItem");
                             break;
                     }
-                    break;
+                    return;
                 }
             }
         }
     }
 
+    //アイテムを取得したときにデータに登録する
     public void GetItem(ItemData item)
     {
         for(int i = 0; i < GetWidth; i++)
