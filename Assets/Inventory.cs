@@ -42,22 +42,22 @@ public class Inventory : MonoBehaviour
             var horizontalPanel = _inventoryPanel.transform.GetChild(i);
             for(int j = 0; j < GetHight; j ++)
             {
-                if (_itemArray[j] == -1)
+                if (_itemArray[j] != -1)
                 {
-                    Image itemImage = horizontalPanel.GetChild(j).GetComponent<Image>();
+                    GameObject itemImage = horizontalPanel.GetChild(j).gameObject;
                     switch (_itemArray[j])
                     {
                         case 0:
-                            itemImage.sprite = (Sprite)Resources.Load("Sword");
+                            itemImage = (GameObject)Resources.Load("sword");
                             break; 
                         case 1:
-                            itemImage.sprite = (Sprite)Resources.Load("Gun");
+                            itemImage = (GameObject)Resources.Load("axe");
                             break;
                         case 2:
-                            itemImage.sprite = (Sprite)Resources.Load("PowerUpItem");
+                            itemImage = (GameObject)Resources.Load("apple");
                             break;
                         case 3:
-                            itemImage.sprite = (Sprite)Resources.Load("RecoveryItem");
+                            itemImage = (GameObject)Resources.Load("hp");
                             break;
                     }
                     return;
@@ -67,24 +67,39 @@ public class Inventory : MonoBehaviour
     }
 
     //アイテムを取得したときにデータに登録する
-    public void GetItem(ItemData item)
+    //public void GetItem(ItemData item)
+    //{
+    //    for(int i = 0; i < GetWidth; i++)
+    //    {
+    //        for(int j = 0; j < GetHight; j++)
+    //        {
+    //            int setIndex = ToIndex(_itemData[i, j]);
+    //            if (_itemArray[setIndex] == -1)
+    //            {
+    //                _itemArray[setIndex] = item._category;
+    //            }
+    //        }
+    //    }
+    //}
+    public void GetItem(int item)
     {
-        for(int i = 0; i < GetWidth; i++)
+        for (int i = 0; i < GetWidth; i++)
         {
-            for(int j = 0; j < GetHight; j++)
+            for (int j = 0; j < GetHight; j++)
             {
-                int setIndex = ToIndex(_itemData[i, j]);
+                int setIndex = ToIndex(i, j);
                 if (_itemArray[setIndex] == -1)
                 {
-                    _itemArray[setIndex] = item._category;
+                    _itemArray[setIndex] = item;
+                    return;
                 }
             }
         }
     }
 
-    public int ToIndex(Cell item)
+    public int ToIndex(int x, int y)
     {
-        return item.horizontal + GetWidth * item.vertical;
+        return x + GetWidth * y;
     }
 
     public Cell ToCell(int index)

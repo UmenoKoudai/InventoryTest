@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Cell : MonoBehaviour
+public class Cell
 {
     //アイテムボックスの縦配列と横配列のインデックスを格納するクラス
     public int vertical;
