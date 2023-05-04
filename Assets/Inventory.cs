@@ -6,6 +6,7 @@ public class Inventory : MonoBehaviour
 {
     [SerializeField, Tooltip("インベントリオブジェクト")] GameObject _inventoryPanel;
     [SerializeField, Tooltip("インベントリの収納数"), Range(0, 10)]int _storage;
+    [SerializeField] Sprite _axe;
     [Tooltip("縦配列と横配列を収納数の数だけ保管できる配列")]
     Cell[,] _itemData;
     [Tooltip("どの収納場所にが何のアイテムが格納されているか")]
@@ -44,23 +45,25 @@ public class Inventory : MonoBehaviour
             {
                 if (_itemArray[j] != -1)
                 {
-                    GameObject itemImage = horizontalPanel.GetChild(j).gameObject;
-                    switch (_itemArray[j])
+                    var itemImage = horizontalPanel.GetChild(j).gameObject.GetComponent<Image>();
+                    for (int n = 0; n < _itemArray.Length; n++)
                     {
-                        case 0:
-                            itemImage = (GameObject)Resources.Load("sword");
-                            break; 
-                        case 1:
-                            itemImage = (GameObject)Resources.Load("axe");
-                            break;
-                        case 2:
-                            itemImage = (GameObject)Resources.Load("apple");
-                            break;
-                        case 3:
-                            itemImage = (GameObject)Resources.Load("hp");
-                            break;
+                        switch (_itemArray[n])
+                        {
+                            case 0:
+                                //itemImage = (GameObject)Resources.Load("sword");
+                                break;
+                            case 1:
+                                itemImage.sprite = _axe;
+                                break;
+                            case 2:
+                                //itemImage = (GameObject)Resources.Load("apple");
+                                break;
+                            case 3:
+                                //itemImage = (GameObject)Resources.Load("hp");
+                                break;
+                        }
                     }
-                    return;
                 }
             }
         }
@@ -83,6 +86,14 @@ public class Inventory : MonoBehaviour
     //}
     public void GetItem(int item)
     {
+        //for(int i = 0; i < GetWidth * GetHight; i++)
+        //{
+        //    if (_itemArray[i] == -1)
+        //    {
+        //        _itemArray[i] = item;
+        //        break;
+        //    }
+        //}
         for (int i = 0; i < GetWidth; i++)
         {
             for (int j = 0; j < GetHight; j++)
