@@ -22,8 +22,13 @@ public class Inventory : InstanceSystem<Inventory>
     {
         for (int i = 0; i < _itemBoxCount; i++)
         {
+            var viewItem = _inventory.transform.GetChild(i).GetComponent<ItemButton>();
             if (_itemArray[i]._itemID != -1)
             {
+                viewItem.ItemID = _itemArray[i]._itemID;
+                viewItem.ItemImage = _itemArray[i]._itemImage;
+                viewItem.ItemCount = _itemArray[i]._itemCount;
+                break;
             }
         }
     }

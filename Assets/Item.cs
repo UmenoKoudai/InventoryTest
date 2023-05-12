@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Item : ItemDataBase
 {
-
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Get();
+    }
+    public void GetButton()
     {
         Get();
     }
@@ -25,6 +28,7 @@ public class Item : ItemDataBase
             if(item._itemID == base.ItemID)
             {
                 item._itemCount++;
+                break;
             }
         }
     }
