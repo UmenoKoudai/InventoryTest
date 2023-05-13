@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public abstract class ItemDataBase : MonoBehaviour
+public abstract class ItemBase : MonoBehaviour
 {
     [SerializeField] Sprite _itemImage;
     [SerializeField] int _itemID;
@@ -11,8 +11,7 @@ public abstract class ItemDataBase : MonoBehaviour
     public string ItemName { get => _itemName; }
 
     public void ItemDown(int id)
-    {
-        for (int i = 0; i < Inventory.instance.ItemCount; i++)
+    {        for (int i = 0; i < Inventory.instance.ItemCount; i++)
         {
             ItemState item = Inventory.instance.ItemArray[i];
             if (item._itemID == id)
