@@ -18,6 +18,13 @@ public class Inventory : InstanceSystem<Inventory>
         _itemBoxCount = _inventory.transform.childCount;
         _itemArray = Enumerable.Repeat(new ItemState("なし", -1, 0, _defaultImage), _itemBoxCount).ToArray();
     }
+    public void Debuger()
+    {
+        foreach (var it in _itemArray)
+        {
+            Debug.Log(string.Format("ID = {0:#} NAME = {1:#} COUNT = {2:#}", it._itemID, it._itemName, it._itemCount));
+        }
+    }
     public void SetItem()
     {
         for (int i = 0; i < _itemBoxCount; i++)
@@ -28,21 +35,7 @@ public class Inventory : InstanceSystem<Inventory>
                 viewItem.ItemID = _itemArray[i]._itemID;
                 viewItem.ItemImage = _itemArray[i]._itemImage;
                 viewItem.ItemCount = _itemArray[i]._itemCount;
-                break;
             }
         }
     }
-
-    //public void GetItem()
-    //{
-    //    int item = UnityEngine.Random.Range(0, _itemImges.Length);
-    //    for (int i = 0; i < _itemBoxCount; i++)
-    //    {
-    //        if (_itemArray[i] == -1)
-    //        {
-    //            _itemArray[i] = item;
-    //            break;
-    //        }
-    //    }
-    //}
 }
