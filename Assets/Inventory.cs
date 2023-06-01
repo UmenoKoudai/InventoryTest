@@ -43,9 +43,7 @@ public class Inventory : InstanceSystem<Inventory>
             var viewItem = viewItemParent.transform.GetChild(0).GetComponent<ItemButton>();
             if (_itemArray[i]._itemID != -1)
             {
-                viewItem.ItemID = _itemArray[i]._itemID;
-                viewItem.ItemImage = _itemArray[i]._itemImage;
-                viewItem.ItemCount = _itemArray[i]._itemCount;
+                viewItem.SetItem = new ItemState(_itemArray[i]._itemName, _itemArray[i]._itemID, _itemArray[i]._itemCount, _itemArray[i]._itemImage);
             }
         }
         //_itemData._itemArray = _itemArray;

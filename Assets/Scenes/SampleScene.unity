@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 40288476}
   - component: {fileID: 40288475}
   - component: {fileID: 40288474}
+  - component: {fileID: 40288478}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -477,6 +478,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40288472}
   m_CullTransparentMesh: 1
+--- !u!114 &40288478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40288472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &41707670
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +511,7 @@ GameObject:
   - component: {fileID: 41707674}
   - component: {fileID: 41707673}
   - component: {fileID: 41707672}
+  - component: {fileID: 41707676}
   m_Layer: 5
   m_Name: Button (Legacy) (18)
   m_TagString: Untagged
@@ -627,6 +649,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41707670}
   m_CullTransparentMesh: 1
+--- !u!114 &41707676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41707670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &54976483
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +828,7 @@ GameObject:
   - component: {fileID: 87616735}
   - component: {fileID: 87616734}
   - component: {fileID: 87616733}
+  - component: {fileID: 87616737}
   m_Layer: 5
   m_Name: Button (Legacy) (9)
   m_TagString: Untagged
@@ -923,6 +966,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87616731}
   m_CullTransparentMesh: 1
+--- !u!114 &87616737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87616731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1001 &88745680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1790,6 +1853,7 @@ GameObject:
   - component: {fileID: 336910426}
   - component: {fileID: 336910425}
   - component: {fileID: 336910424}
+  - component: {fileID: 336910428}
   m_Layer: 5
   m_Name: Button (Legacy) (19)
   m_TagString: Untagged
@@ -1927,6 +1991,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336910422}
   m_CullTransparentMesh: 1
+--- !u!114 &336910428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336910422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &371745056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,6 +2104,7 @@ GameObject:
   - component: {fileID: 377049514}
   - component: {fileID: 377049513}
   - component: {fileID: 377049512}
+  - component: {fileID: 377049516}
   m_Layer: 5
   m_Name: Button (Legacy) (5)
   m_TagString: Untagged
@@ -2157,6 +2242,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377049510}
   m_CullTransparentMesh: 1
+--- !u!114 &377049516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377049510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &436540665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,6 +2275,7 @@ GameObject:
   - component: {fileID: 436540669}
   - component: {fileID: 436540668}
   - component: {fileID: 436540667}
+  - component: {fileID: 436540671}
   m_Layer: 5
   m_Name: Button (Legacy) (13)
   m_TagString: Untagged
@@ -2307,6 +2413,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436540665}
   m_CullTransparentMesh: 1
+--- !u!114 &436540671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436540665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1001 &448099381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2422,6 +2548,7 @@ GameObject:
   - component: {fileID: 452269097}
   - component: {fileID: 452269096}
   - component: {fileID: 452269095}
+  - component: {fileID: 452269099}
   m_Layer: 5
   m_Name: Button (Legacy) (17)
   m_TagString: Untagged
@@ -2559,6 +2686,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452269093}
   m_CullTransparentMesh: 1
+--- !u!114 &452269099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452269093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &452404105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +2719,7 @@ GameObject:
   - component: {fileID: 452404109}
   - component: {fileID: 452404108}
   - component: {fileID: 452404107}
+  - component: {fileID: 452404111}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -2709,6 +2857,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452404105}
   m_CullTransparentMesh: 1
+--- !u!114 &452404111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452404105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1001 &461488419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2824,6 +2992,7 @@ GameObject:
   - component: {fileID: 463859913}
   - component: {fileID: 463859912}
   - component: {fileID: 463859911}
+  - component: {fileID: 463859915}
   m_Layer: 5
   m_Name: Button (Legacy) (14)
   m_TagString: Untagged
@@ -2961,6 +3130,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463859909}
   m_CullTransparentMesh: 1
+--- !u!114 &463859915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463859909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &501771770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,6 +3163,7 @@ GameObject:
   - component: {fileID: 501771774}
   - component: {fileID: 501771773}
   - component: {fileID: 501771772}
+  - component: {fileID: 501771776}
   m_Layer: 5
   m_Name: Button (Legacy) (7)
   m_TagString: Untagged
@@ -3111,6 +3301,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501771770}
   m_CullTransparentMesh: 1
+--- !u!114 &501771776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501771770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1001 &517533682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3532,6 +3742,7 @@ GameObject:
   - component: {fileID: 582576827}
   - component: {fileID: 582576826}
   - component: {fileID: 582576825}
+  - component: {fileID: 582576829}
   m_Layer: 5
   m_Name: Button (Legacy) (16)
   m_TagString: Untagged
@@ -3669,6 +3880,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582576823}
   m_CullTransparentMesh: 1
+--- !u!114 &582576829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582576823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &650215632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4425,6 +4656,7 @@ GameObject:
   - component: {fileID: 887427577}
   - component: {fileID: 887427576}
   - component: {fileID: 887427575}
+  - component: {fileID: 887427579}
   m_Layer: 5
   m_Name: Button (Legacy) (10)
   m_TagString: Untagged
@@ -4562,6 +4794,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887427573}
   m_CullTransparentMesh: 1
+--- !u!114 &887427579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887427573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &889807198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,6 +4895,8 @@ GameObject:
   - component: {fileID: 898832621}
   - component: {fileID: 898832620}
   - component: {fileID: 898832619}
+  - component: {fileID: 898832624}
+  - component: {fileID: 898832623}
   m_Layer: 5
   m_Name: Button (Legacy) (15)
   m_TagString: Untagged
@@ -4780,6 +5034,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898832617}
   m_CullTransparentMesh: 1
+--- !u!114 &898832623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898832617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 2
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
+--- !u!114 &898832624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898832617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &930875055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4873,6 +5167,7 @@ GameObject:
   - component: {fileID: 936162231}
   - component: {fileID: 936162230}
   - component: {fileID: 936162229}
+  - component: {fileID: 936162233}
   m_Layer: 5
   m_Name: Button (Legacy) (6)
   m_TagString: Untagged
@@ -5010,6 +5305,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936162227}
   m_CullTransparentMesh: 1
+--- !u!114 &936162233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936162227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5209,6 +5524,7 @@ GameObject:
   - component: {fileID: 1062168065}
   - component: {fileID: 1062168064}
   - component: {fileID: 1062168063}
+  - component: {fileID: 1062168067}
   m_Layer: 5
   m_Name: Button (Legacy) (11)
   m_TagString: Untagged
@@ -5346,6 +5662,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062168061}
   m_CullTransparentMesh: 1
+--- !u!114 &1062168067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062168061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &1093684672
 GameObject:
   m_ObjectHideFlags: 0
@@ -5359,6 +5695,7 @@ GameObject:
   - component: {fileID: 1093684676}
   - component: {fileID: 1093684675}
   - component: {fileID: 1093684674}
+  - component: {fileID: 1093684678}
   m_Layer: 5
   m_Name: Button (Legacy) (22)
   m_TagString: Untagged
@@ -5496,6 +5833,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093684672}
   m_CullTransparentMesh: 1
+--- !u!114 &1093684678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093684672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1001 &1099924266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5873,6 +6230,7 @@ GameObject:
   - component: {fileID: 1143675265}
   - component: {fileID: 1143675264}
   - component: {fileID: 1143675263}
+  - component: {fileID: 1143675267}
   m_Layer: 5
   m_Name: Button (Legacy) (4)
   m_TagString: Untagged
@@ -6010,6 +6368,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143675261}
   m_CullTransparentMesh: 1
+--- !u!114 &1143675267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143675261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &1218474741
 GameObject:
   m_ObjectHideFlags: 0
@@ -6409,6 +6787,7 @@ GameObject:
   - component: {fileID: 1330562503}
   - component: {fileID: 1330562502}
   - component: {fileID: 1330562501}
+  - component: {fileID: 1330562505}
   m_Layer: 5
   m_Name: Button (Legacy) (20)
   m_TagString: Untagged
@@ -6546,6 +6925,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330562499}
   m_CullTransparentMesh: 1
+--- !u!114 &1330562505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330562499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &1400862954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6559,6 +6958,7 @@ GameObject:
   - component: {fileID: 1400862958}
   - component: {fileID: 1400862957}
   - component: {fileID: 1400862956}
+  - component: {fileID: 1400862960}
   m_Layer: 5
   m_Name: Button (Legacy) (3)
   m_TagString: Untagged
@@ -6696,6 +7096,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400862954}
   m_CullTransparentMesh: 1
+--- !u!114 &1400862960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400862954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &1455546807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6789,6 +7209,7 @@ GameObject:
   - component: {fileID: 1465138693}
   - component: {fileID: 1465138692}
   - component: {fileID: 1465138691}
+  - component: {fileID: 1465138695}
   m_Layer: 5
   m_Name: Button (Legacy) (21)
   m_TagString: Untagged
@@ -6926,6 +7347,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465138689}
   m_CullTransparentMesh: 1
+--- !u!114 &1465138695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465138689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &1514219242
 GameObject:
   m_ObjectHideFlags: 0
@@ -6939,6 +7380,7 @@ GameObject:
   - component: {fileID: 1514219246}
   - component: {fileID: 1514219245}
   - component: {fileID: 1514219244}
+  - component: {fileID: 1514219248}
   m_Layer: 5
   m_Name: Button (Legacy) (12)
   m_TagString: Untagged
@@ -7076,6 +7518,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514219242}
   m_CullTransparentMesh: 1
+--- !u!114 &1514219248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514219242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &1571082066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7249,6 +7711,7 @@ GameObject:
   - component: {fileID: 1613996591}
   - component: {fileID: 1613996590}
   - component: {fileID: 1613996589}
+  - component: {fileID: 1613996593}
   m_Layer: 5
   m_Name: Button (Legacy) (23)
   m_TagString: Untagged
@@ -7386,6 +7849,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613996587}
   m_CullTransparentMesh: 1
+--- !u!114 &1613996593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613996587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &1640768442
 GameObject:
   m_ObjectHideFlags: 0
@@ -8492,6 +8975,7 @@ GameObject:
   - component: {fileID: 2121024520}
   - component: {fileID: 2121024519}
   - component: {fileID: 2121024518}
+  - component: {fileID: 2121024522}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -8629,6 +9113,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121024516}
   m_CullTransparentMesh: 1
+--- !u!114 &2121024522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121024516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0
 --- !u!1 &2122648170
 GameObject:
   m_ObjectHideFlags: 0
@@ -8642,6 +9146,7 @@ GameObject:
   - component: {fileID: 2122648174}
   - component: {fileID: 2122648173}
   - component: {fileID: 2122648172}
+  - component: {fileID: 2122648176}
   m_Layer: 5
   m_Name: Button (Legacy) (8)
   m_TagString: Untagged
@@ -8779,3 +9284,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122648170}
   m_CullTransparentMesh: 1
+--- !u!114 &2122648176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122648170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e4855ad133a4f4e84851c06fc07738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemImage: {fileID: 0}
+  _itemID: 0
+  _itemName: 
+  _effectType: 0
+  _recoveryNum: 0
+  _powerUpNum: 0
+  _defenseUpNum: 0
+  _damageNum: 0

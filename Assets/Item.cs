@@ -25,18 +25,12 @@ public class Item : ItemBase
                 Inventory.instance.Debuger();
                 break;
             }
-            if(item._itemID == base.ItemID)
+            if (item._itemID == base.ItemID)
             {
                 item._itemCount++;
                 Inventory.instance.SetItem();
                 break;
             }
         }
-    }
-
-    public override void Use()
-    {
-        //アイテムの処理を書く
-        base.ItemDown(base.ItemID);
     }
 }

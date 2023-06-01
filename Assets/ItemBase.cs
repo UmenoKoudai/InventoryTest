@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using static Item;
 
 public abstract class ItemBase : MonoBehaviour
 {
     [SerializeField] Sprite _itemImage;
     [SerializeField] int _itemID;
     [SerializeField]string _itemName;
+    event Action _itemUse;
 
     public Sprite ItemImage { get => _itemImage;}
     public int ItemID { get => _itemID; }
@@ -27,5 +30,4 @@ public abstract class ItemBase : MonoBehaviour
     }
 
     public abstract void Get();
-    public abstract void Use();
 }
