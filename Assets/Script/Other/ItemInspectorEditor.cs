@@ -8,25 +8,25 @@ public class ItemInspectorEditor : Editor
 {
     public override void OnInspectorGUI()
     {
-        ItemEffect item = target as ItemEffect;
-        item.EffectType = (ItemEffect.ItemEffect)EditorGUILayout.EnumPopup(item.EffectType);
-        if (item.EffectType == ItemEffect.ItemEffect.Recovery)
+        ItemEffect effect = target as ItemEffect;
+        effect.EffectType = (ItemEffect.Effect)EditorGUILayout.EnumPopup(effect.EffectType);
+        if (effect.EffectType == ItemEffect.Effect.Recovery)
         {
-            item.Recovery = EditorGUILayout.IntField("回復量",item.Recovery);
+            effect.Recovery = EditorGUILayout.IntField("回復量", effect.Recovery);
         }
-        if (item.EffectType == ItemEffect.ItemEffect.PowerUp)
+        if (effect.EffectType == ItemEffect.Effect.PowerUp)
         {
-            item.PowerUp = EditorGUILayout.IntField("攻撃力アップ量",item.PowerUp);
+            effect.PowerUp = EditorGUILayout.IntField("攻撃力アップ量", effect.PowerUp);
         }
-        if(item.EffectType == ItemEffect.ItemEffect.DefenseUp)
+        if(effect.EffectType == ItemEffect.Effect.DefenseUp)
         {
-            item.DefenseUp = EditorGUILayout.IntField ("防御力アップ量",item.DefenseUp);
+            effect.DefenseUp = EditorGUILayout.IntField ("防御力アップ量", effect.DefenseUp);
         }
-        if(item.EffectType == ItemEffect.ItemEffect.Damage)
+        if(effect.EffectType == ItemEffect.Effect.Damage)
         {
-            item.Damage = EditorGUILayout.IntField("与えるダメージ量",item.Damage);
+            effect.Damage = EditorGUILayout.IntField("与えるダメージ量", effect.Damage);
         }
 
-        EditorUtility.SetDirty(item);
+        EditorUtility.SetDirty(effect);
     }
 }

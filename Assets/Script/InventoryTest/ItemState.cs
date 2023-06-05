@@ -7,7 +7,7 @@ public class ItemState
     public int _itemID;　//各アイテムのID
     public int _itemCount; //所持しているアイテムの数
     public Sprite _itemImage;　//貼り付けるアイテムのイメージ
-    public event Action _action;
+    public event Action _action;　//アイテム毎の関数を格納する
     public ItemState(string itemName, int itemID, int itemCount, Sprite itemImage, Action action)
     {
         _itemName = itemName;
@@ -15,5 +15,10 @@ public class ItemState
         _itemCount = itemCount;
         _itemImage = itemImage;
         _action = action;
+    }
+
+    public void Action()
+    {
+        _action();
     }
 }

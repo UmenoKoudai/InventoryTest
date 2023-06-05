@@ -1,76 +1,65 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : ItemBase
 {
+    ItemEffect _effectScript;
     event Action _effect;
+
     private void Awake()
     {
-        if (base.Effect == ItemEffect.Recovery)
+        //選択しているenumによってActionに代入する関数を変える
+        _effectScript = GetComponent<ItemEffect>();
+        if (_effectScript.EffectType == ItemEffect.Effect.Recovery)
         {
-            _effect += RecoveryEffect;
+            _effect += _effectScript.RecoveryEffect;
         }
-        if(base.Effect == ItemEffect.PowerUp)
+        if (_effectScript.EffectType == ItemEffect.Effect.PowerUp)
         {
-            _effect += PowerUpEffect;
+            _effect += _effectScript.PowerUpEffect;
         }
-        if (base.Effect == ItemEffect.DefenseUp)
+        if (_effectScript.EffectType == ItemEffect.Effect.DefenseUp)
         {
-            _effect += DefenseUpEffect;
+            _effect += _effectScript.DefenseUpEffect;
         }
-        if (base.Effect == ItemEffect.Damage)
+        if (_effectScript.EffectType == ItemEffect.Effect.Damage)
         {
-            _effect += DamageEffect;
+            _effect += _effectScript.DamageEffect;
         }
     }
+
+    //アイテムに触れた時ゲットする
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Get();
     }
-    public void GetButton()
-    {
-        Get();
-    }
+
+    //アイテムをゲットする関数
     public void Get()
     {
+        //インベントリの数だけループを回す
         for (int i = 0; i < Inventory.instance.ItemCount; i++)
         {
+            //取得アイテム配列のi番目を格納
             ItemState item = Inventory.instance.ItemArray[i];
-            var ItemArrayTest = Inventory.instance.ItemArray;
+            //アイテム配列を取得
+            var ItemArray = Inventory.instance.ItemArray;
+            //もしアイテムが何も登録されてなかったら
             if (item._itemID == -1)
             {
-                ItemArrayTest[i] = new ItemState(base.ItemName, base.ItemID, 1, base.ItemImage, _effect);
+                //今セットしているアイテム情報をセットする
+                ItemArray[i] = new ItemState(base.ItemName, base.ItemID, 1, base.ItemImage, _effect);
+                //インベントリに反映させる
                 Inventory.instance.SetItem();
-                Inventory.instance.Debuger();
                 break;
             }
-            if (item._itemID == base.ItemID)
+            //同じアイテムを持っていたらアイテムカウントを1つ上げる
+            if (item._itemID == base.ItemID && item._itemCount < 99)
             {
                 item._itemCount++;
                 Inventory.instance.SetItem();
                 break;
             }
         }
-    }
-    public void RecoveryEffect()
-    {
-        Debug.Log("体力回復");
-    }
-
-    public void PowerUpEffect()
-    {
-        Debug.Log("攻撃力アップ");
-    }
-
-    public void DefenseUpEffect()
-    {
-        Debug.Log("防御力アップ");
-    }
-
-    public void DamageEffect()
-    {
-        Debug.Log("ダメージを与えた");
     }
 }

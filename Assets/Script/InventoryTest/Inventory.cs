@@ -7,48 +7,43 @@ public class Inventory : InstanceSystem<Inventory>
 {
     public class ItemData { public ItemState[] _itemArray; }
 
-    [SerializeField] GameObject _inventory;
-    ItemState[] _itemArray;
-    int _itemBoxCount;
-    ItemData _itemData = new ItemData();
-    event Action _useItem;
+    [SerializeField] GameObject _inventory;　//表示させたいアイテムボックスのオブジェクト
+    [SerializeField] Sprite _defaultImage;
+    ItemState[] _itemArray;　//今獲得しているアイテムの情報を格納
+    int _itemBoxCount;　
+    ItemData _itemData;
 
     public ItemState[] ItemArray { get => _itemArray; }
+    public Sprite DefaultImage { get => _defaultImage; }
     public int ItemCount { get => _itemBoxCount; }
-    public Action UseItem { get => _useItem; set => _useItem = value; }
 
     void Awake()
     {
         _itemBoxCount = _inventory.transform.childCount;
-        _itemArray = Enumerable.Repeat(new ItemState("なし", -1, 0, null, null), _itemBoxCount).ToArray();
-        //_itemData._itemArray = _itemArray;
-        //_itemData = _itemData.OnLoad();
-        //if (_itemData != null)
-        //{
-        //    _itemArray = _itemData._itemArray;
-        //}
-        SetItem();
-    }
-    public void Debuger()
-    {
-        foreach (var it in _itemArray)
+        if (_itemArray == null)
         {
-            Debug.Log(string.Format("ID = {0:#} NAME = {1:#} COUNT = {2:#}", it._itemID, it._itemName, it._itemCount));
+            _itemArray = Enumerable.Repeat(new ItemState("なし", -1, 0, null, null), _itemBoxCount).ToArray(); //アイテム配列に何も入っていなかったら
         }
+        SetItem();
     }
     public void SetItem()
     {
+        //アイテムボックスの数だけループを回して取得しているアイテムをアイテムボックスに反映させる
         for (int i = 0; i < _itemBoxCount; i++)
         {
-            var _action = _itemArray[i];
+            //インベントリオブジェクトの直下のオブジェクトを１つずつ取得していく
             var viewItemParent = _inventory.transform.GetChild(i);
+            //ItemButtonスクリプトがアタッチされているオブジェクトを取得
             var viewItem = viewItemParent.transform.GetChild(0).GetComponent<ItemButton>();
+            //取得アイテムの配列を確認して-1(アイテムを持っていない)状態じゃ無かったらインベントリに反映させる
             if (_itemArray[i]._itemID != -1)
             {
-                viewItem.SetItem = new ItemState(_itemArray[i]._itemName, _itemArray[i]._itemID, _itemArray[i]._itemCount, _itemArray[i]._itemImage, _useItem);
+                viewItem.SetItem = _itemArray[i];
+            }
+            else
+            {
+                viewItem.SetItem = new ItemState("", -1, 0, _defaultImage, null);
             }
         }
-        //_itemData._itemArray = _itemArray;
-        //_itemData.OnSave();
     }
 }
