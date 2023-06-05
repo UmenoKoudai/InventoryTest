@@ -18,11 +18,11 @@ public class ItemInspectorEditor : Editor
         {
             effect.PowerUp = EditorGUILayout.IntField("攻撃力アップ量", effect.PowerUp);
         }
-        if(effect.EffectType == ItemEffect.Effect.DefenseUp)
+        if (effect.EffectType == ItemEffect.Effect.DefenseUp)
         {
-            effect.DefenseUp = EditorGUILayout.IntField ("防御力アップ量", effect.DefenseUp);
+            effect.DefenseUp = EditorGUILayout.IntField("防御力アップ量", effect.DefenseUp);
         }
-        if(effect.EffectType == ItemEffect.Effect.Damage)
+        if (effect.EffectType == ItemEffect.Effect.Damage)
         {
             effect.Damage = EditorGUILayout.IntField("与えるダメージ量", effect.Damage);
         }
