@@ -22,8 +22,8 @@ public class Inventory : InstanceSystem<Inventory>
         _itemBoxCount = _inventory.transform.childCount;
         if (_itemArray == null)
         {
-            _itemArray = Enumerable.Repeat(new ItemState("なし", -1, 0, null, null), _itemBoxCount).ToArray(); //アイテム配列に何も入っていなかったら
-        }
+            _itemArray = Enumerable.Repeat(new ItemState("なし", -1, 0, null, null), _itemBoxCount).ToArray();
+        }//アイテム配列に何も入っていなかったら
         SetItem();
     }
     public void SetItem()

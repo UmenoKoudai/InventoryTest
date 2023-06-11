@@ -17,8 +17,11 @@ public class ItemButton : MonoBehaviour, IPointerClickHandler
     //ボタンをクリックしたらアイテム別の関数を実行
     public void OnPointerClick(PointerEventData eventData)
     {
-        ItemDown(_setItem._itemID);
-        _setItem.Action();
+        if (_setItem._itemID != -1)
+        {
+            _setItem.Action();
+            ItemDown(_setItem._itemID);
+        }
     }
 
     //アイテムを使用したらカウントを1つ減らす
@@ -27,13 +30,14 @@ public class ItemButton : MonoBehaviour, IPointerClickHandler
         for (int i = 0; i < Inventory.instance.ItemCount; i++)
         {
             ItemState item = Inventory.instance.ItemArray[i];
-            if (item._itemCount > 0)
+            if (item._itemCount > 1)
             {
                 if (item._itemID == id)
                 {
                     item._itemCount--;
                     break;
                 }
+                
             }
             else
             {
